@@ -77,7 +77,7 @@ async def start(client, message):
             InlineKeyboardButton("Hᴇʟᴩ 🕸️", callback_data="help"),
             InlineKeyboardButton("Aʙᴏᴜᴛ ✨", callback_data="about")
         ]]
-        m = await message.reply_sticker("CAACAgUAAx0CbEz78AABAWxBZmyZF_3O-ExU6fVBgjOiUhrdRBEAAlkFAAKPzQFXFqDoXf0tCBA1BA
+        m = await message.reply_sticker("CAACAgUAAx0CbEz78AABAXJSZnASWfwwHCjxWBwasbT4T5a3oVQAAlkFAAKPzQFXFqDoXf0tCBAeBA")
         await asyncio.sleep(2)
         await message.reply_photo(photo=random.choice(PICS), caption=START_MESSAGE.format(user=message.from_user.mention, bot=client.mention), reply_markup=InlineKeyboardMarkup(buttons), parse_mode=enums.ParseMode.HTML)
         return await m.delete()
